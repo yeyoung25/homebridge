@@ -1,0 +1,468 @@
+div .guide{
+    background: url('../images/hb_Header01.png') no-repeat center / cover;
+}
+div .ticket{
+    background: url('../images/hb_Header02.png') no-repeat center / cover;
+}
+div .theme{
+    background: url('../images/hb_Header03.png') no-repeat center / cover;
+}
+/* Detail top_img */
+div .contentBannerCB01 nav div.active::after{
+    transform: rotate(-180deg);
+}
+div .contentBannerCB01 nav div.active ol{
+    display: block;
+    z-index: 100;
+}
+div .contentBannerCB01 nav div ol li a:hover{
+    color: var(--gs11);
+}
+/* Detail nav Fin */
+.indexContainer .contentBannerCB01>div:first-child h2{
+    margin-bottom: 60px;
+}
+.indexContainer .contentBannerCB01>div:first-child h2 a{
+    background: url('../images/maincon03_more.png') no-repeat right center / 6px 11px;
+    padding-right: 15px;
+}
+.indexContainer .contentBannerCB01>div:first-child ul li{
+    justify-content: space-between;
+}
+.indexContainer .contentBannerCB01>div:first-child ul li a,
+.indexContainer .contentBannerCB01>div:first-child ul li time{
+    display: inline-block;
+    color: var(--gs9);
+}
+.indexContainer .contentBannerCB01>div:first-child ul li time{
+    padding-top: 4px;
+}
+.indexContainer .contentBannerCB01>div:nth-child(2) ul{
+    display: flex;
+}
+.indexContainer .contentBannerCB01>div:nth-child(2) ul li{
+    width: 33.33%;
+    box-sizing: border-box;
+    text-align: center;
+}
+/* contentBannerCB01 Fin */
+/* 상세페이지 시작 */
+.newsHBContainer .paging>a{
+    font-size: 0;
+}
+.newsHBContainer .paging>a:first-child{
+    background: url('../images/newdet_first.png') no-repeat center / contain;
+    width: 12px;
+}
+.newsHBContainer .paging>a:nth-child(2){
+    background: url('../images/newdet_pre.png') no-repeat center / contain;
+    width: 8px;
+}
+.newsHBContainer .paging>a:nth-child(4){
+    background: url('../images/newdet_next.png') no-repeat center / contain;
+    width: 8px;
+}
+.newsHBContainer .paging>a:last-child{
+    background: url('../images/newdet_last.png') no-repeat center / contain;
+    width: 12px;
+}
+/* newNotice Fin */
+.newsHBContainer article div figure img{
+    width: 100%;
+}
+.newsHBContainer article div figure figcaption{
+    font-size: 0;
+}
+.newsHBContainer article .innerPager li{
+    justify-content: space-between;
+    width: 33.33%;
+}
+.newsHBContainer article .innerPager li a span{
+    display: block;
+    color: var(--gs9);
+    margin-bottom: 10px;
+}
+.newsHBContainer article .innerPager li:nth-child(2){
+    text-align: center;
+}
+/* newNotice detail Fin */
+
+
+
+@media screen and (max-width: 767px) {
+
+}
+/* ?mobile */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+}
+/* ?tablet */
+@media screen and (min-width: 1280px) {
+    header+.conPbtm {
+        padding-bottom: 350px;
+    }
+    .indexContainer .banslider li strong{
+        position: absolute;
+        top: 43.827%;
+        left: 13.281%;
+    }
+    .indexContainer .banslider li{
+        position: relative;
+        color: var(--gs1);
+    }
+    .indexContainer .banslider li h2{
+        position: absolute;
+        top: 48.229%;
+        left: 13.281%;
+    }
+    .indexContainer .contentBanner01{
+        margin: 155px 0 190px;
+        padding-left: 13.281%;
+    }
+    .indexContainer>.bx-wrapper div:nth-child(2)>.bx-pager::first-letter{
+        font-size: 34px;
+    }
+    .indexContainer>.bx-wrapper .bx-controls .bx-controls-direction a{
+        top: 57.172%;
+        margin: 0;
+    }
+    .indexContainer>.bx-wrapper div:nth-child(2) div:first-child .bx-prev{
+        background: url('../images/mainBanL.png') no-repeat top / contain;
+        left: 18.75%;
+        z-index: 100;
+    }
+    .indexContainer>.bx-wrapper div:nth-child(2) div:first-child .bx-next {
+        background: url('../images/mainBanR.png') no-repeat top / contain;
+        left: 22.083%;
+        z-index: 100;
+    }
+    .indexContainer>.bx-wrapper div:nth-child(2)>div:nth-child(2){
+        width: auto;
+        font-size: 20px;
+        font-family: 'Open Sans';
+        top: 56.172%;
+        left: 13.281%;
+        color: var(--gs1);
+        padding: 0;
+        height: 5%;
+        text-align: left;
+    }
+    .indexContainer .banslider li::before{
+        display: block;
+        position: absolute;
+        content: '';
+        border-left: 0.65vw solid var(--rs8);
+        top: 43.827%;
+        left: 11.25%;
+        height: 5.157vw;
+    }
+    div .linemg~div,
+    div article,
+    #wrap .contentBannerCB01{
+        max-width: 1458px;
+        margin: 0 auto;
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
+    /* CB mainPage Fin */
+    .contentBannerCB01{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .indexContainer .contentBannerCB01>div:first-child{
+        border-right: 1px solid var(--gs5);
+    }
+    .indexContainer .contentBannerCB01>div:not(:last-child){
+        width: 50%;
+        padding: 75px 70px;
+        border-top: 1px solid var(--gs5);
+        box-sizing: border-box;
+    }
+    .indexContainer .contentBannerCB01>div:not(:last-child) h2{
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 35px;
+        color: var(--bs10);
+    }
+    .indexContainer .contentBannerCB01>div:first-child ul li a{
+        width: 80%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        padding-bottom: 2px;
+    }
+    .indexContainer .contentBannerCB01>div:first-child ul li:not(:last-child) a,
+    .indexContainer .contentBannerCB01>div:first-child ul li:not(:last-child) time{
+        margin-bottom: 15px;
+    }
+    .indexContainer .contentBannerCB01>div:first-child ul li a:hover{
+        text-decoration: underline;
+    }
+    .indexContainer .contentBannerCB01>div:nth-child(2) ul li:first-child a{
+        background: url('../images/maincon03_res.png') no-repeat center top / 100px 100px;
+    }
+    .indexContainer .contentBannerCB01>div:nth-child(2) ul li:nth-child(2) a{
+        background: url('../images/maincon03_inpuiry.png') no-repeat center top/ 100px 100px;
+    }
+    .indexContainer .contentBannerCB01>div:nth-child(2) ul li:last-child a{
+        background: url('../images/maincon03_lost.png') no-repeat center top/ 100px 100px;
+    }
+    .indexContainer .contentBannerCB01>div:nth-child(2) ul li a{
+        display: inline-block;
+        width: 100%;
+        padding-top: 120px;
+        color: var(--gs9);
+    }
+    gmp-map{
+        height: 100%;
+    }
+    .indexContainer .contentBannerCB01>#map{
+        background: url('../images/kakaoHB_map.png') no-repeat center / cover;
+        position: relative;
+        width: 100%;
+        height: 550px;
+    }
+    .indexContainer .contentBannerCB01 #map .map_dtl{
+        position: absolute;
+        top: 160px;
+        right: 60px;
+        background-color: var(--rs8);
+        opacity: 0.94;
+        color: var(--gs1);
+        width: 445px;
+        padding: 55px 30px 35px;
+    }
+    .indexContainer .contentBannerCB01 #map .map_dtl h2{
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    .indexContainer .contentBannerCB01 #map .map_dtl button{
+        display: flex;
+        border: 1px solid var(--gs1);
+        background: none;
+        margin-left: 40px;
+        color: var(--gs1);
+        padding: 10px;
+        vertical-align: text-bottom;
+        position: absolute;
+        top: 55px;
+        right: 30px;
+    }
+    .indexContainer .contentBannerCB01 #map .map_dtl button::before{
+        background: url('../images/mapCopy.png') no-repeat center /contain;
+        content: '';
+        display: inline-block;
+        width: 13px;
+        height: 15px;
+        margin-right: 5px;
+    }
+    .indexContainer .contentBannerCB01 #map .map_dtl address{
+        line-height: 26px;
+    }
+    .indexContainer .contentBannerCB01 #map .map_dtl address b{
+        display: block;
+        line-height: 26px;
+    }
+    /* index Fin */
+    /* 상세페이지 시작 */
+    div .homeContainer h2{
+        display: flex;
+        color: var(--gs1);
+        justify-content: center;
+        padding: 145px 0;
+    }
+    div .homeContainer nav{
+        display: flex;
+        background-color: var(--gs1);
+        width: 46.875%;
+        min-width: 660px;
+        padding-left: 13.281%;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    div .homeContainer nav>a{
+        background: url('../images/home_nav.png') no-repeat left / contain;
+        display: block;
+        width: 10%; 
+        min-width: 39px;
+        font-size: 0;
+        height: 20px;
+    }
+    div .homeContainer nav div{
+        position: relative;
+        width: 45%; 
+        min-width: 255px;
+        background-color: var(--gs1);
+    }
+    div .homeContainer nav div input{
+        color: var(--gs11);
+        background-color: transparent;
+        border: none;
+        padding-left: 30px;
+        height: 65px;
+    }
+    div .homeContainer nav div::before{
+        border: 1px solid var(--gs4);
+        height: 25px;
+        content: '';
+        position: absolute;
+        top: 20px;
+    }
+    div .homeContainer nav div::after{
+        background: url('../images/det_nav.png') no-repeat center / contain;
+        content: '';
+        position: absolute;
+        right: 30px;
+        top: 27px;    
+        display: block;
+        width: 10px;
+        height: 10px;
+    }
+    div .homeContainer nav div ol{
+        display: none;
+    }
+    div .homeContainer nav div ol li:not(:last-child){
+        display: block;
+        margin-bottom: 20px;
+    }
+    div .homeContainer nav div ol li a{
+        color: var(--gs7);
+        display: block;
+        width: 100%;
+    }
+    div .homeContainer nav div:first-of-type ol{
+        position: absolute;
+        width: 100%;
+        top: 64px;
+        box-sizing: border-box;
+        padding: 20px 0 20px 30px;
+        border: 1px solid var(--gs6);
+        background-color: var(--gs1);
+    }
+    div .homeContainer nav div:last-of-type ol{
+        position: absolute;
+        width: 100%;
+        top: 64px;
+        box-sizing: border-box;
+        padding: 20px 0 20px 30px;
+        border: 1px solid var(--gs6);
+        background-color: var(--gs1);
+    }
+    div article .linebtm,
+    header+div>.linebtm,
+    .siteContainer ul li>.linebtm{
+        text-align: center;
+        padding: 95px 0;
+        border-bottom: 1px solid var(--gs5);
+    }
+    .howCBContainer div:nth-child(2) h3{
+        text-align: center;
+        padding: 95px 0;
+    }
+    div div:nth-child(2) .linebtm{
+        text-align: center;
+        padding: 95px 0;
+        border-bottom: 1px solid var(--gs5);
+    }
+    .newsHBContainer article h3{
+        text-align: center;
+        padding: 95px 0;
+    }
+    .newsHBContainer div:nth-child(2) h3+ul{
+        margin-bottom: 125px;
+    }
+    .newsHBContainer div:nth-child(2) h3+ul li{
+        border-bottom: 1px solid var(--gs5);
+        line-height: 55px;
+    }
+    .newsHBContainer div:nth-child(2) ul li a{
+        display: flex;
+    }
+    .newsHBContainer div:nth-child(2) ul li a span:first-child{
+        width: 5%;
+        padding-left: 30px;
+    }
+    .newsHBContainer div:nth-child(2) ul li a span:nth-child(2){
+        width: 15%;
+        color: var(--gs9);
+    }
+    .newsHBContainer div:nth-child(2) ul li a strong{
+        width: 70%;
+    }
+    .newsHBContainer div:nth-child(2) ul li a time{
+        background: url('../images/newdet_calendar.png') no-repeat left / contain;
+        width: 10%;
+        padding-left: 30px;
+        color: var(--gs10);
+        background-size: 12px;
+    }
+    .newsHBContainer .paging{
+        display: flex;
+        width: 240px;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    /* newNoticeCB Fin */
+    .newsHBContainer article div h4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 35px;
+        border-bottom: 1px solid var(--gs5);
+    }
+    .newsHBContainer article div h4 small{
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+        color: var(--gs9);
+    }
+    .newsHBContainer article div h4 time{
+        color: var(--gs7);
+        background: url('../images/newdetD_calendar.png') no-repeat left / 12px 11px;
+        padding: 2px 0 0 20px;
+        margin-left: auto;
+    }
+    .newsHBContainer article div figure{
+        padding: 30px 25px 100px;
+        text-align: center;
+        display: inline-block;
+    }
+    .newsHBContainer article .innerPager{
+        display: flex;
+        align-items: center;
+        padding: 110px 20px 0;
+        width: 100%;
+        border-top: 1px solid var(--gs5);
+        box-sizing: border-box;
+    }
+    .newsHBContainer article .innerPager li:first-child a{
+        background: url('../images/newdetD_pre.png') no-repeat left;
+        padding: 10px 0 0 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .newsHBContainer article .innerPager li:last-child a{
+        background: url('../images/newdetD_next.png') no-repeat right;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 50px 0 0px;
+        text-align: right;    
+    }
+    .newsHBContainer article .innerPager li:nth-child(2) a{
+        background: url('../images/newdetD_list.png') no-repeat 45px center;
+        display: inline-block;
+        background-color: var(--bs5);
+        color: var(--gs1);
+        padding: 0px 50px 0px 80px;
+        line-height: 60px;
+    }
+    .newsHBContainer article .innerPager li a strong{
+        line-height: 22px;
+    }
+    .newsHBContainer article .innerPager li span,
+    .newsHBContainer article .innerPager li strong{
+        width: 100%;
+    }
+    /* newNoticeCB detail Fin */
+}
+/* ?desktop */
