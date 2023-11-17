@@ -1,7 +1,7 @@
 div .guide{
     background: url('../images/hb_Header01.png') no-repeat center / cover;
 }
-div .ticket{
+div .HOSTEL{
     background: url('../images/hb_Header02.png') no-repeat center / cover;
 }
 div .theme{
@@ -451,7 +451,7 @@ div .contentBannerCB01 nav div ol li a:hover{
     .newsHBContainer article .innerPager li:nth-child(2) a{
         background: url('../images/newdetD_list.png') no-repeat 45px center;
         display: inline-block;
-        background-color: var(--bs5);
+        background-color: var(--rs8);
         color: var(--gs1);
         padding: 0px 50px 0px 80px;
         line-height: 60px;
