@@ -8,15 +8,21 @@ div .theme{
     background: url('../images/hb_Header03.png') no-repeat center / cover;
 }
 /* Detail top_img */
-div .contentBannerCB01 nav div.active::after{
+div .homeContainer nav div.active::after{
     transform: rotate(-180deg);
 }
 div .contentBannerCB01 nav div.active ol{
     display: block;
     z-index: 100;
 }
-div .contentBannerCB01 nav div ol li a:hover{
+div .homeContainer nav div ol li a:hover{
     color: var(--gs11);
+}
+div .homeContainer nav div ol{
+    display: none;
+}
+div .homeContainer nav div.active ol{
+    display: block;
 }
 /* Detail nav Fin */
 .indexContainer .contentBannerCB01>div:first-child h2{
@@ -86,6 +92,48 @@ div .contentBannerCB01 nav div ol li a:hover{
     text-align: center;
 }
 /* newNotice detail Fin */
+
+/*  Fin */
+.trafHBContainer div:nth-child(2) ul li:not(:last-child)::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: -1px;
+    width: 1px;
+    height: 22px;
+    border-right: 1px solid var(--gs5);
+}
+.trafHBContainer div:nth-child(2) ul li.active{
+    border: 1px solid var(--gs11);
+    border-bottom: none;
+    color: var(--gs11);
+}
+.trafHBContainer div:nth-child(2) ul li.active::after{
+    content: none;
+    border: 0;
+}
+.trafHBContainer div:nth-child(2)>div{
+    display: none;
+}
+.trafHBContainer div:nth-child(2)>div.active{
+    display: block;
+}
+.trafHBContainer div:nth-child(2) .publicTransport ol li strong mark{
+    color: var(--os1);
+}
+.trafHBContainer div:nth-child(2) .regularBus dl:first-child dd:last-child{
+    color: var(--gs11);
+}
+/* trafficReportHB Fin */
+
+.amenHBContainer div:nth-child(2) ul li::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* amenitiesCB Fin */
 
 
 
@@ -295,11 +343,16 @@ div .contentBannerCB01 nav div ol li a:hover{
         background-color: var(--gs1);
     }
     div .homeContainer nav div input{
+        width: 85%;
+        height: 65px;
         color: var(--gs11);
         background-color: transparent;
         border: none;
         padding-left: 30px;
-        height: 65px;
+        text-align: left;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
     }
     div .homeContainer nav div::before{
         border: 1px solid var(--gs4);
@@ -317,9 +370,6 @@ div .contentBannerCB01 nav div ol li a:hover{
         display: block;
         width: 10px;
         height: 10px;
-    }
-    div .homeContainer nav div ol{
-        display: none;
     }
     div .homeContainer nav div ol li:not(:last-child){
         display: block;
@@ -464,5 +514,190 @@ div .contentBannerCB01 nav div ol li a:hover{
         width: 100%;
     }
     /* newNoticeCB detail Fin */
+
+    /* newNoticeCB Fin */
+    .trafHBContainer div:nth-child(2) ul{
+        display: flex;
+        margin-bottom: 100px;
+        cursor: pointer;
+    }
+    .trafHBContainer div:nth-child(2) h3{
+        text-align: center;
+        padding: 95px 0;
+    }
+    .trafHBContainer div:nth-child(2) ul li{
+        border-bottom: 1px solid var(--gs11);
+        position: relative;
+        width: 33.33%;
+        text-align: center;
+        line-height: 100px;
+        color: var(--gs5);
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport ol li strong{
+        display: block;
+        margin-bottom: 60px;
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport ol li strong mark:first-child{
+        margin-right: 35px;
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport ol li:first-child dl dt{
+        display: flex;
+        margin: 0 0 30px 20px;
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport ol li:first-child dl dt::before,
+    .trafHBContainer div:nth-child(2) .publicTransport ol li:last-child b:first-of-type:before,
+    .trafHBContainer div:nth-child(2) .publicTransport ol li:last-child strong:nth-of-type(2):before{
+        display: inline-block;
+        content: '▶';
+        font-size: 10px;
+        line-height: 24px;
+        margin-right: 10px;
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport ol li:first-child{
+        margin-bottom: 150px;
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport ol li:first-child dl dd{
+        margin-left: 20px;
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport ol li:first-child dl dd:not(:last-child){
+       margin-bottom: 20px;
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport ol li:last-child b{
+        display: flex;
+        margin: 0 0 30px 20px;
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport ol li:last-child dl{
+        margin-left: 20px;
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport ol li:last-child dl:not(:last-child){
+        margin-bottom: 40px;
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport ol li:last-child dl dt{
+        margin-bottom: 15px;
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport ol li dl dd{
+        color: var(--gs8);
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport ol li:nth-child(2) dl:nth-of-type(6) dd:first-of-type{
+        margin-bottom: 15px;
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport ol li:last-child strong:nth-of-type(2){
+        display: flex;
+        margin: 100px 0 40px;
+    }
+    .trafHBContainer div:nth-child(2) .byCar dl{
+        margin-bottom: 60px;
+    }
+    .trafHBContainer div:nth-child(2) .byCar dl dt::before,
+    .trafHBContainer div:nth-child(2) .byCar figure figcaption::before,
+    .trafHBContainer div:nth-child(2) .regularBus dl dt::before{
+        display: inline-block;
+        content: '▶';
+        font-size: 10px;
+        line-height: 20px;
+        margin-right: 5px;
+    }
+    .trafHBContainer div:nth-child(2) .byCar dl dt{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .trafHBContainer div:nth-child(2) .byCar dl dd{
+        color: var(--gs8);
+        line-height: 24px;
+    }
+    .trafHBContainer div:nth-child(2) .byCar dl dd:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .trafHBContainer div:nth-child(2) .byCar figure{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .trafHBContainer div:nth-child(2) .byCar figure figcaption{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .trafHBContainer div:nth-child(2) .kakaoT b{
+        display: block;
+        margin-bottom: 50px;
+    }
+    .trafHBContainer div:nth-child(2) .kakaoT b:first-child{
+        display: block;
+        color: var(--os1);
+        margin-bottom: 45px;
+    }
+    .trafHBContainer div:nth-child(2) .kakaoT span{
+        display: inline-block;
+        margin-left: 30px;
+    }
+    .trafHBContainer div:nth-child(2) .kakaoT p{
+        display: block;
+        color: var(--gs8);
+        width: 53.546%;
+        line-height: 26px;
+        margin-bottom: 155px;
+    }
+    .trafHBContainer div:nth-child(2) .kakaoT dl:not(:last-child){
+        margin-bottom: 70px;
+    }
+    .trafHBContainer div:nth-child(2) .kakaoT dl:nth-of-type(4){
+        margin-bottom: 150px;
+    }
+    .trafHBContainer div:nth-child(2) .kakaoT dl dt{
+        margin-bottom: 50px;
+    }
+    .trafHBContainer div:nth-child(2) .kakaoT dl dd:not(:last-child){
+        margin-bottom: 25px;
+    }
+    .trafHBContainer div:nth-child(2) .regularBus dl:not(:last-child){
+        margin-bottom: 60px;
+    }
+    .trafHBContainer div:nth-child(2) .regularBus dl dt{
+        margin-bottom: 35px;
+        display: flex;
+    }
+    .trafHBContainer div:nth-child(2) .regularBus dl dd{
+        line-height: 25px;
+        color: var(--gs9);
+    }
+    .trafHBContainer div:nth-child(2) .regularBus dl dd:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .trafHBContainer div:nth-child(2) .regularBus b{
+        display: block;
+        margin-bottom: 60px;
+    }
+    /* trafficReportHB Fin */
+    .amenHBContainer div:nth-child(2) strong{
+        display: block;
+        margin: 110px 0 30px;
+    }
+    .amenHBContainer div:nth-child(2) ul li:not(:last-child){
+        margin-bottom: 115px;
+    }
+    .amenHBContainer div:nth-child(2) ul li img{
+        float: left;
+        margin-right: 110px;
+    }
+    .amenHBContainer div:nth-child(2) ul li dl{
+        float: left;
+        width: 60%;
+    }
+    .amenHBContainer div:nth-child(2) ul li dl dt{
+        margin-bottom: 30px;
+    }
+    .amenHBContainer div:nth-child(2) ul li dl dd{
+        display: flex;
+        line-height: 24px;
+        color: var(--gs8);
+    }
+    .amenHBContainer div:nth-child(2) ul li dl dd::before{
+        content: '-';
+        display: block;
+        margin-right: 5px;
+    }
+    .amenHBContainer div:nth-child(2) ul li dl dd:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    /* amenitiesHB Fin */
 }
 /* ?desktop */

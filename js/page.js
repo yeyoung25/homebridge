@@ -18,10 +18,10 @@ function newspage(){
   };
 
   function trafTab(){
-    $('.trafCBContainer div:nth-child(2) ul li').click(function(){
-      $('.trafCBContainer div:nth-child(2) ul li').removeClass('active');
+    $('.trafHBContainer div:nth-child(2) ul.la9_20 li').click(function(){
+      $('.trafHBContainer div:nth-child(2) ul li').removeClass('active');
       $(this).addClass('active');
-      $('.trafCBContainer div:nth-child(2) div').removeClass('active');
+      $('.trafHBContainer div:nth-child(2) div').removeClass('active');
       $('.' + $(this).attr('data-tab')).addClass('active');
     });
   }
