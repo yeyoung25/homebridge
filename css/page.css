@@ -397,6 +397,7 @@ div .homeContainer nav div.active ol{
         padding: 20px 0 20px 30px;
         border: 1px solid var(--gs6);
         background-color: var(--gs1);
+        z-index: 10;
     }
     div article .linebtm,
     header+div>.linebtm,
@@ -602,13 +603,21 @@ div .homeContainer nav div.active ol{
     }
     .usaHBContainer div:nth-child(2) ul>li:not(:last-child)>dl{
         float: left;
-        width: 50%;
+        width: 48%;
         padding-left: 180px;
         position: relative;
         box-sizing: border-box;
+    }
+    .usaHBContainer div:nth-child(2) ul>li:nth-child(2)>dl{
         margin-bottom: 55px;
     }
+    .usaHBContainer div:nth-child(2) ul>li:not(:last-child)>dl:first-child{
+        margin-right: 20px;
+    }
     .usaHBContainer div:nth-child(2) ul>li:not(:last-child)>dl:last-child{
+        float: right;
+    }
+    .usaHBContainer div:nth-child(2) ul>li:nth-child(2)>dl:nth-child(odd){
         float: right;
     }
     .usaHBContainer div:nth-child(2) ul>li:not(:last-child)>dl>dt{
@@ -618,9 +627,11 @@ div .homeContainer nav div.active ol{
     }
     .usaHBContainer div:nth-child(2) ul>li:not(:last-child)>dl>dd{
         width: 100%;
-        margin-bottom: 15px;
         line-height: 22px;
         display: flex;
+    }
+    .usaHBContainer div:nth-child(2) ul>li:not(:last-child)>dl>dd:not(:last-child){
+        margin-bottom: 15px;
     }
     .usaHBContainer div:nth-child(2) ul>li:not(:last-child)>dl>dd::before{
         content: '-';
@@ -673,6 +684,28 @@ div .homeContainer nav div.active ol{
         text-align: center;
         line-height: 100px;
         color: var(--gs5);
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport>div{
+        position: relative;
+        background-color: rgba(77, 166, 48, 0.2);
+        padding: 60px 0 60px 260px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        margin-bottom: 90px;
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport>div::before{
+        background: url('../images/trafficHBCell.png') no-repeat center / contain;
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 103px;
+        position: absolute;
+        left: 85px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .trafHBContainer div:nth-child(2) .publicTransport>div>p:first-child{
+        margin-bottom: 40px;
     }
     .trafHBContainer div:nth-child(2) .publicTransport ol li strong{
         display: block;
@@ -851,41 +884,215 @@ div .homeContainer nav div.active ol{
         line-height: 24px;
     }
     .ruleHBContainer div:nth-child(2) ul li:not(:last-child){
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .ruleHBContainer div:nth-child(2) ul li ul,
     .ruleHBContainer div:nth-child(2) ul li ol{
-        margin: 20px 0 30px;
+        margin: 10px 0 30px;
         color: var(--gs9);
         padding-left: 10px;
     }
     /* rulesOfUseHB Fin */
     .wingHBContainer div:nth-child(2) h3,
-    .wingHBContainer div:nth-child(2) h3{
+    .mainHBContainer div:nth-child(2) h3{
+        margin-bottom: 110px;
+    }
+    .wingHBContainer div:nth-child(2)>ul>li:not(:last-child),
+    .mainHBContainer div:nth-child(2)>ul>li:not(:last-child){
         margin-bottom: 110px;
     }
     .wingHBContainer div:nth-child(2) ul li strong,
-    .wingHBContainer div:nth-child(2) ul li strong{
+    .mainHBContainer div:nth-child(2) ul li strong{
         display: block;
         line-height: 30px;
         margin-bottom: 35px;
     }
     .wingHBContainer div:nth-child(2) ul li strong mark,
-    .wingHBContainer div:nth-child(2) ul li strong mark{
+    .mainHBContainer div:nth-child(2) ul li strong mark{
         color: var(--rs9);
     }
     .wingHBContainer div:nth-child(2) ul li>p+img,
-    .wingHBContainer div:nth-child(2) ul li>p+img{
+    .mainHBContainer div:nth-child(2) ul li>p+img{
         width: 100%;
+        display: block;
+        margin-bottom: 50px;
     }
-    .wingHBContainer div:nth-child(2) ul li>p,
-    .wingHBContainer div:nth-child(2) ul li>p{
+    .wingHBContainer div:nth-child(2)>ul>li>strong+p,
+    .mainHBContainer div:nth-child(2)>ul>li>strong+p{
         margin-bottom: 50px;
         color: var(--gs9);
         line-height: 24px;
     }
-
-
+    .wingHBContainer div:nth-child(2) ul li>p,
+    .mainHBContainer div:nth-child(2) ul li>p{
+        color: var(--gs9);
+    }
+    .wingHBContainer div:nth-child(2)>ul>li>img+p:not(:last-child),
+    .mainHBContainer div:nth-child(2)>ul>li>img+p:not(:last-child){
+        margin-bottom: 15px;
+        line-height: 24px;
+    }
+    .wingHBContainer div:nth-child(2)>ul>li:nth-child(2),
+    .mainHBContainer div:nth-child(2)>ul>li:last-child{
+        height: 800px;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2)::after,
+    .mainHBContainer div:nth-child(2) ul li:last-child::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2)::after,
+    .mainHBContainer div:nth-child(2) ul li:last-child::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) img,
+    .mainHBContainer div:nth-child(2) ul li:last-child img{
+        float: left;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol{
+        float: right;
+        width: 50%;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li{
+        display: flex;
+        width: 50%;
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:not(:last-child),
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li::before{
+        width: 41px;
+        height: 41px;
+        content: '';
+        display: inline-block;
+        padding-right: 20px;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:first-child::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:first-child::before{
+        background: url('../images/buildingnumb_01.png') no-repeat center / contain;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(2)::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(2)::before{
+        background: url('../images/buildingnumb_02.png') no-repeat center / contain;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(3)::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(3)::before{
+        background: url('../images/buildingnumb_03.png') no-repeat center / contain;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(4)::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(4)::before{
+        background: url('../images/buildingnumb_04.png') no-repeat center / contain;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(5)::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(5)::before{
+        background: url('../images/buildingnumb_05.png') no-repeat center / contain;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(6)::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(6)::before{
+        background: url('../images/buildingnumb_06.png') no-repeat center / contain;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(7)::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(7)::before{
+        background: url('../images/buildingnumb_07.png') no-repeat center / contain;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(8)::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(8)::before{
+        background: url('../images/buildingnumb_08.png') no-repeat center / contain;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(9)::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(9)::before{
+        background: url('../images/buildingnumb_09.png') no-repeat center / contain;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(10)::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(10)::before{
+        background: url('../images/buildingnumb_10.png') no-repeat center / contain;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(11)::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(11)::before{
+        background: url('../images/buildingnumb_11.png') no-repeat center / contain;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(12)::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(12)::before{
+        background: url('../images/buildingnumb_12.png') no-repeat center / contain;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(13)::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(13)::before{
+        background: url('../images/buildingnumb_13.png') no-repeat center / contain;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(14)::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(14)::before{
+        background: url('../images/buildingnumb_14.png') no-repeat center / contain;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(15)::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(15)::before{
+        background: url('../images/buildingnumb_15.png') no-repeat center / contain;
+    }
+    .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(16)::before,
+    .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(16)::before{
+        background: url('../images/buildingnumb_16.png') no-repeat center / contain;
+    }
+    .wingHBContainer div:nth-child(2) ul li:last-child{
+        clear: both;
+    }
+    .wingHBContainer div:nth-child(2) ul li:last-child div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .wingHBContainer div:nth-child(2) ul li:last-child div>img{
+        width: 50%;
+    }
+    .mainHBContainer div:nth-child(2) ul li:nth-child(2) table{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .mainHBContainer div:nth-child(2) ul li:nth-child(2) table caption{
+        text-align: left;
+        margin-bottom: 35px;
+    }
+    .mainHBContainer div:nth-child(2) ul li:nth-child(2) table thead{
+        line-height: 22px;
+        border-top: 2px solid var(--rs9);
+        text-align: center;
+    }
+    .mainHBContainer div:nth-child(2) ul li:nth-child(2) table thead tr th{
+        background-color: rgba(77, 166, 48,0.3);
+    }
+    .mainHBContainer div:nth-child(2) ul li:nth-child(2) table thead tr th:first-child{
+        border-left: none;
+    }
+    .mainHBContainer div:nth-child(2) ul li:nth-child(2) table tbody tr th,
+    .mainHBContainer div:nth-child(2) table thead tr th:first-child{
+        border-left: none;
+    }
+    .mainHBContainer div:nth-child(2) ul li:nth-child(2) table thead tr th:last-child,
+    .mainHBContainer div:nth-child(2) ul li:nth-child(2) table tr td:last-child{
+        border-right: none;
+    }
+    .mainHBContainer div:nth-child(2) ul li:nth-child(2) table tr th, 
+    .mainHBContainer div:nth-child(2) ul li:nth-child(2) table tr td{
+        display: table-cell;
+        vertical-align: middle;
+        border: 1px solid var(--gs9);
+        padding: 25px 0;
+    }
+    .mainHBContainer div:nth-child(2) ul li:nth-child(2) table tr th{
+        text-align: center; 
+    }
+    .mainHBContainer div:nth-child(2) ul li:nth-child(2) table tr td{
+        padding-left: 45px;
+    }
+    .mainHBContainer div:nth-child(2) ul li:nth-child(2) table tr td ul li:not(:last-child){
+        margin-bottom: 15px;
+    }
     /* newWingHB Fin */
     .themHBContainer div:nth-child(2) h3{
         margin-bottom: 110px;
