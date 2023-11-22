@@ -26,8 +26,6 @@ header.mouseOver{
 }
 header.mouseOver h1 a{
     background: url('../images/mainHB_logo.png') no-repeat center / contain;
-    width: 265px;
-    height: 65px;
 }
 header.mouseOver div .ect_btn a:not(:last-child){
     color: var(--gs11); 
@@ -490,8 +488,8 @@ footer div details summary.on::after{
         display: block;
         background: url('../images/mainHB_logo.png') no-repeat center / contain;
         font-size: 0;
-        width: 223.846px;
-        height: 60px;
+        width: 180px;
+        height: 45px;
         font-size: 0;
     }
     header>div{
