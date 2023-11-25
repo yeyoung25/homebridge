@@ -978,7 +978,6 @@ div .homeContainer nav div.active ol{
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol,
     .mainHBContainer div:nth-child(2) ul li:last-child ol{
-        /* float: right; */
         display: inline-block;
         width: 35%;
         height: 760px;
@@ -1124,41 +1123,44 @@ div .homeContainer nav div.active ol{
     }
     /* newWingHB Fin */
     .themHBContainer div:nth-child(2) h3{
-        margin-bottom: 110px;
+        margin-bottom: 55px;
     }
     .themHBContainer div:nth-child(2) strong{
         display: block;
         margin-bottom: 20px;
-        line-height: 35px;
+        line-height: 30px;
     }
     .themHBContainer div:nth-child(2) strong>mark{
         display: block;
         color: var(--rs8);
     }
     .themHBContainer div:nth-child(2)>p{
-        margin-bottom: 110px;
-        line-height: 22px;
+        margin-bottom: 100px;
+        line-height: 25px;
         color: var(--gs9);
+        font-size: 14px;
     }
     .themHBContainer div:nth-child(2) ul li:not(:last-child){
-        margin-bottom: 85px;
+        margin-bottom: 100px;
     }
     .themHBContainer div:nth-child(2) ul li h4{
-        margin-bottom: 45px;
+        margin-bottom: 30px;
+        font-size: 18px;
     }
     .themHBContainer div:nth-child(2) ul li img{
         display: block;
         width: 100%;
-        margin-bottom: 70px;
+        margin-bottom: 30px;
     }
     .themHBContainer div:nth-child(2) ul li p{
         color: var(--gs9);
-        line-height: 22px;
+        line-height: 20px;
     }
     .themHBContainer div:nth-child(2) ul li p b{
         display: block;
         color: var(--gs11);
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        font-size: 16px;
     }
     .themHBContainer div:nth-child(2) ul li:last-child h4,
     .themHBContainer div:nth-child(2) ul li:last-child p{
