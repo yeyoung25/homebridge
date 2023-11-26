@@ -142,8 +142,8 @@ footer div details summary.on::after{
         display: block;
         background: url('../images/mainHB_logo.png') no-repeat center / contain;
         font-size: 0;
-        width: 158px;
-        height: 42px;
+        width: 127px;
+        height: 32px;
         font-size: 0;
     }
     header>div{
@@ -875,7 +875,7 @@ footer div details summary.on::after{
         display: block;
         background: url('../images/mainHB_logo.png') no-repeat center / contain;
         font-size: 0;
-        width: 265px;
+        width: 256px;
         height: 65px;
     }
     footer>ul{
