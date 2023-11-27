@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOMEBRIDGE</title>
     <link rel="shortcut icon" href="images/logo.png">
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo-NlStZG2jyTu-Fkt4m6yO0eFJJGm9fE&callback=console.debug&libraries=maps,marker&v=beta"></script>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/jquery.fitvids.js"></script>
@@ -150,6 +151,10 @@
                 </ul>
             </div>
             <div id="map">
+                <gmp-map center="37.289432525634766,127.19827270507812" zoom="14" map-id="DEMO_MAP_ID">
+                    <gmp-advanced-marker position="37.289432525634766,127.19827270507812" title="My location">
+                    </gmp-advanced-marker>
+                </gmp-map>
                 <div class="map_dtl op7_20">
                     <h2 class="la9_35">HOMEBRIDGE</h2>
                     <button class="btnCopy op7_12">COPY</button>

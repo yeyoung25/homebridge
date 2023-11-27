@@ -30,8 +30,10 @@ div .homeContainer nav div.active ol{
     margin-bottom: 60px;
 }
 .indexContainer .contentBannerCB01>div:first-child h2 a{
-    background: url('../images/maincon03_more.png') no-repeat right center / 6px 11px;
-    padding-right: 15px;
+    background: url(../images/maincon03_more.png) no-repeat right center / contain;
+    padding-right: 10px;
+    background-size: 4px 9px;
+    background-position: 40px;
 }
 .indexContainer .contentBannerCB01>div:first-child ul li{
     justify-content: space-between;
@@ -316,7 +318,7 @@ div .homeContainer nav div.active ol{
         display: inline-block;
         border: 1px solid var(--gs1);
         background: none;
-        margin-left: 19px;
+        margin-left: 55px;
         color: var(--gs1);
         padding: 5px 10px;
         vertical-align: text-bottom;
@@ -533,7 +535,7 @@ div .homeContainer nav div.active ol{
     }
     /* newNoticeHB detail Fin */
     .howHBContainer div:nth-child(2) h3{
-        margin-bottom: 55px;
+        margin-bottom: 35px;
     }
     .howHBContainer div:nth-child(2)>ul>li:not(:last-child){
         margin-bottom: 70px;
@@ -541,22 +543,23 @@ div .homeContainer nav div.active ol{
     .howHBContainer div:nth-child(2) ul li>strong{
         display: inline-block;
         margin-bottom: 30px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .howHBContainer div:nth-child(2) ul li:first-child>p{
-        font-size: 14px;
-        line-height: 20px;
         color: var(--gs8);
+        line-height: 18px;
+        font-size: 12px;
     }
     .howHBContainer div:nth-child(2) ul li:first-child>p:first-of-type{
         margin-bottom: 15px;
     }
     .howHBContainer div:nth-child(2) ul li>strong>a{
-        display: inline-block;
+        float: right;
         background-color: transparent;
         border: none;
-        padding: 0 0px 5px 30px;
+        text-align: right;
         color: var(--rs8);
+        margin-left: 10px;
     }
     .howHBContainer div:nth-child(2) ul li>strong>a::after{
         background: url('../images/howHB_ABCD.png') no-repeat center / contain;
@@ -567,13 +570,14 @@ div .homeContainer nav div.active ol{
         padding-right: 15px;
     }
     .howHBContainer div:nth-child(2) ul li{
+        line-height: 20px;
         font-size: 14px;
     }
     .howHBContainer div:nth-child(2) ul>li>ol>li>ul{
-        margin: 20px 0 50px 15px;
+        margin: 20px 0 50px 0;
     }
     .howHBContainer div:nth-child(2) ul>li>ol>li>ul>li>ul{
-        margin: 20px 0 60px 0;
+        margin: 10px 0 30px 0;
     }
     .howHBContainer div:nth-child(2) ul>li>ol>li>ul>li>ul>li,
     .howHBContainer div:nth-child(2) ul>li>ol>li>ul>li>ol>li,
@@ -584,7 +588,7 @@ div .homeContainer nav div.active ol{
     .howHBContainer div:nth-child(2) ul>li>ol>li>ul>li>ol>li:not(:last-child),
     .howHBContainer div:nth-child(2) ul>li:nth-child(2)>p:not(:last-child),
     .howHBContainer div:nth-child(2) ul>li:nth-child(3) ul li:not(:last-child){
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     .howHBContainer div:nth-child(2) ul>li>ol>li:nth-child(2)>ul>li:not(:last-child){
         margin-bottom: 50px;
@@ -614,17 +618,16 @@ div .homeContainer nav div.active ol{
     }
     .usaHBContainer div:nth-child(2) ul>li>strong{
         display: block;
-        margin-bottom: 30px;
-        font-size: 18px;
+        margin-bottom: 20px;
+        line-height: 22px;
+        font-size: 16px;
     }
     .usaHBContainer div:nth-child(2) ul>li>b{
         display: block;
-        margin-bottom: 30px;
-        font-size: 16px;
+        margin-bottom: 20px;
+        font-size: 14px;
     }
     .usaHBContainer div:nth-child(2) ul>li:not(:last-child)>dl{
-        padding-left: 180px;
-        position: relative;
         box-sizing: border-box;
         margin-bottom: 50px;
     }
@@ -635,10 +638,14 @@ div .homeContainer nav div.active ol{
         margin-right: 20px;
     }
     .usaHBContainer div:nth-child(2) ul>li:not(:last-child)>dl>dt{
-        position: absolute;
-        left: 0;
+        margin-bottom: 20px;
         line-height: 22px;
         font-size: 14px;
+    }
+    .usaHBContainer div:nth-child(2) ul>li:not(:last-child)>dl>dt>br{
+        display: inline-block;
+        content: " ";
+        padding: 0 2px;
     }
     .usaHBContainer div:nth-child(2) ul>li:not(:last-child)>dl>dd{
         width: 100%;
@@ -651,7 +658,7 @@ div .homeContainer nav div.active ol{
     }
     .usaHBContainer div:nth-child(2) ul>li:not(:last-child)>dl>dd::before{
         content: '-';
-        padding-right: 10px;
+        padding-right: 5px;
     }
     .usaHBContainer div:nth-child(2) ul>li>p{
         line-height: 22px;
@@ -677,11 +684,12 @@ div .homeContainer nav div.active ol{
     }
     .usaHBContainer div:nth-child(2) ul>li:last-child>dl>dd{
         color: var(--gs9);
-        padding-left: 10px;
         font-size: 16px;
     }
     .usaHBContainer div:nth-child(2) ul>li:last-child>dl>dd:not(:last-child){
         margin-bottom: 15px;
+        line-height: 20px;
+        font-size: 14px;
     }
     /* usageFeeHB Fin */
     .trafHBContainer div:nth-child(2) .publicTransport>div{
@@ -953,7 +961,7 @@ div .homeContainer nav div.active ol{
     }
     .ruleHBContainer div:nth-child(2) ul li ul,
     .ruleHBContainer div:nth-child(2) ul li ol{
-        margin: 10px 0 30px;
+        margin: 10px 0 20px;
         color: var(--gs9);
         padding-left: 10px;
     }
@@ -964,14 +972,14 @@ div .homeContainer nav div.active ol{
     }
     .wingHBContainer div:nth-child(2)>ul>li:not(:last-child),
     .mainHBContainer div:nth-child(2)>ul>li:not(:last-child){
-        margin-bottom: 110px;
+        margin-bottom: 70px;
     }
     .wingHBContainer div:nth-child(2) ul li strong,
     .mainHBContainer div:nth-child(2) ul li strong{
         display: block;
-        line-height: 30px;
+        line-height: 22px;
         margin-bottom: 25px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .wingHBContainer div:nth-child(2) ul li strong mark,
     .mainHBContainer div:nth-child(2) ul li strong mark{
@@ -988,20 +996,18 @@ div .homeContainer nav div.active ol{
         margin-bottom: 30px;
         color: var(--gs9);
         line-height: 20px;
+        font-size: 12px;
     }
     .wingHBContainer div:nth-child(2) ul li>p,
     .mainHBContainer div:nth-child(2) ul li>p{
         color: var(--gs9);
         line-height: 18px;
+        font-size: 12px;
     }
     .wingHBContainer div:nth-child(2)>ul>li>img+p:not(:last-child),
     .mainHBContainer div:nth-child(2)>ul>li>img+p:not(:last-child){
         margin-bottom: 15px;
         line-height: 18px;
-    }
-    .wingHBContainer div:nth-child(2)>ul>li:nth-child(2),
-    .mainHBContainer div:nth-child(2)>ul>li:last-child{
-        height: 800px;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2)::after,
     .mainHBContainer div:nth-child(2) ul li:last-child::after{
@@ -1011,16 +1017,14 @@ div .homeContainer nav div.active ol{
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) img,
     .mainHBContainer div:nth-child(2) ul li:last-child img{
-        /* width: 435px;
-        height: 572px; */
         width: 100%;
         max-width: 435px;
         vertical-align: top;
+        margin-bottom: 20px;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol,
     .mainHBContainer div:nth-child(2) ul li:last-child ol{
         display: inline-block;
-        height: 760px;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li{
@@ -1034,8 +1038,8 @@ div .homeContainer nav div.active ol{
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li::before{
-        width: 33px;
-        height: 33px;
+        width: 22px;
+        height: 23px;
         content: '';
         display: inline-block;
         padding-right: 20px;
@@ -1107,9 +1111,6 @@ div .homeContainer nav div.active ol{
     .wingHBContainer div:nth-child(2) ul li:last-child{
         clear: both;
     }
-    .wingHBContainer div:nth-child(2) ul li:last-child div{
-        width: 260px;
-    }
     .wingHBContainer div:nth-child(2) ul li:last-child div>img{
         width: 100%;
         margin: 0 auto;
@@ -1144,6 +1145,7 @@ div .homeContainer nav div.active ol{
     .mainHBContainer div:nth-child(2) ul li:nth-child(2) table thead tr th:last-child,
     .mainHBContainer div:nth-child(2) ul li:nth-child(2) table tr td:last-child{
         border-right: none;
+        line-height: 18px;
     }
     .mainHBContainer div:nth-child(2) ul li:nth-child(2) table tr th, 
     .mainHBContainer div:nth-child(2) ul li:nth-child(2) table tr td{
@@ -1157,35 +1159,40 @@ div .homeContainer nav div.active ol{
     }
     .mainHBContainer div:nth-child(2) ul li:nth-child(2) table tr td{
         padding-left: 10px;
+        line-height: 18px;
     }
     .mainHBContainer div:nth-child(2) ul li:nth-child(2) table tr td ul li:not(:last-child){
         margin-bottom: 15px;
+        line-height: 18px;
     }
     /* newWingHB Fin */
     .themHBContainer div:nth-child(2) h3{
-        margin-bottom: 55px;
+        margin-bottom: 35px;
     }
     .themHBContainer div:nth-child(2) strong{
         display: block;
         margin-bottom: 20px;
-        line-height: 30px;
+        line-height: 22px;
+        font-size: 14px;
     }
     .themHBContainer div:nth-child(2) strong>mark{
         display: block;
         color: var(--rs8);
+        margin-bottom: 20px;
     }
     .themHBContainer div:nth-child(2)>p{
         margin-bottom: 100px;
         line-height: 25px;
         color: var(--gs9);
-        font-size: 14px;
+        font-size: 12px;
     }
     .themHBContainer div:nth-child(2) ul li:not(:last-child){
         margin-bottom: 100px;
     }
     .themHBContainer div:nth-child(2) ul li h4{
         margin-bottom: 30px;
-        font-size: 18px;
+        line-height: 22px;
+        font-size: 16px;
     }
     .themHBContainer div:nth-child(2) ul li img{
         display: block;
@@ -1200,7 +1207,7 @@ div .homeContainer nav div.active ol{
         display: block;
         color: var(--gs11);
         margin-bottom: 20px;
-        font-size: 16px;
+        font-size: 14px;
     }
     .themHBContainer div:nth-child(2) ul li:last-child h4,
     .themHBContainer div:nth-child(2) ul li:last-child p{
