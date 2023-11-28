@@ -29,12 +29,6 @@ div .homeContainer nav div.active ol{
 .indexContainer .contentBannerCB01>div:first-child h2{
     margin-bottom: 60px;
 }
-.indexContainer .contentBannerCB01>div:first-child h2 a{
-    background: url(../images/maincon03_more.png) no-repeat right center / contain;
-    padding-right: 10px;
-    background-size: 4px 9px;
-    background-position: 40px;
-}
 .indexContainer .contentBannerCB01>div:first-child ul li{
     justify-content: space-between;
 }
@@ -95,8 +89,6 @@ div .homeContainer nav div.active ol{
     text-align: center;
 }
 /* newNotice detail Fin */
-
-/*  Fin */
 .trafHBContainer div:nth-child(2) ul li:not(:last-child)::after{
     content: '';
     display: inline-block;
@@ -192,6 +184,12 @@ div .homeContainer nav div.active ol{
         margin: 45px 0 105px;
         padding-left: 3.571%;
         box-sizing: border-box;
+    }
+    .indexContainer .contentBannerCB01>div:first-child h2 a{
+        background: url('../images/maincon03_more.png') no-repeat right center / contain;
+        padding-right: 10px;
+        background-size: 4px 9px;
+        background-position: 40px;
     }
     .indexContainer>.bx-wrapper div:nth-child(2)>.bx-pager::first-letter{
         font-size: 22px;
@@ -739,7 +737,7 @@ div .homeContainer nav div.active ol{
         color: var(--gs5);
         box-sizing: border-box;
         font-size: 10px;
-        padding: 0 5px;
+        padding: 0 7px;
     }
     .trafHBContainer div:nth-child(2) .publicTransport ol li strong{
         display: block;
@@ -1325,7 +1323,12 @@ div .homeContainer nav div.active ol{
         height: 5.861vw;
         font-size: 12px;
     }
-    
+    .indexContainer .contentBannerCB01>div:first-child h2 a{
+        background: url('../images/maincon03_more.png') no-repeat right center / contain;
+        padding-right: 10px;
+        background-size: 4px 9px;
+        background-position: 40px 2px;
+    }
     .indexContainer .contentBannerCB01>div:first-child{
         border-bottom: 1px solid var(--gs5);
     }
@@ -2317,6 +2320,12 @@ div .homeContainer nav div.active ol{
     .contentBannerCB01{
         display: flex;
         flex-wrap: wrap;
+    }
+    .indexContainer .contentBannerCB01>div:first-child h2 a{
+        background: url('../images/maincon03_more.png') no-repeat right center / contain;
+        padding-right: 15px;
+        background-size: 5px 10px;
+        background-position: 55px 3.5px;
     }
     .indexContainer .contentBannerCB01>div:first-child{
         border-right: 1px solid var(--gs5);
