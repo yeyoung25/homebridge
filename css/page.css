@@ -484,7 +484,8 @@ div .homeContainer nav div.active ol{
         font-size: 14px;
     }
     .newsHBContainer article div h4 time{
-        background: url('../images/newdetD_calendar.png') no-repeat left / 11px 10px;
+        background: url('../images/newdet_calendar.png') no-repeat left / 11px 10px;
+        filter: invert(42%) sepia(0%) saturate(644%) hue-rotate(144deg) brightness(91%) contrast(86%);
         margin-left: auto;
         padding-left: 15px;
         color: var(--gs7);
@@ -496,8 +497,9 @@ div .homeContainer nav div.active ol{
     }
     .newsHBContainer article .innerPager{
         display: flex;
-        padding-top: 55px;
+        align-items: center;
         width: 100%;
+        padding-top: 55px;
         border-top: 1px solid var(--gs5);
         box-sizing: border-box;
     }
@@ -510,13 +512,17 @@ div .homeContainer nav div.active ol{
         justify-content: flex-end;
     }
     .newsHBContainer article .innerPager li:first-child a{
-        background: url('../images/newdetD_pre.png') no-repeat left;
+        background: url('../images/newdetD_pre.png') no-repeat left / contain;
         padding-left: 50px;
+        width: 22px;
+        height: 22px;
     }
     .newsHBContainer article .innerPager li:last-child a{
-        background: url('../images/newdetD_next.png') no-repeat right;
+        background: url('../images/newdetD_next.png') no-repeat right / contain;
         padding-right: 50px;
         text-align: right;
+        width: 22px;
+        height: 22px;
     }
     .newsHBContainer article .innerPager li:nth-child(2) a{
         background: url('../images/newdetD_list.png') no-repeat 15px center / 11px 11px;
@@ -951,10 +957,10 @@ div .homeContainer nav div.active ol{
         display: block;
         margin-bottom: 20px;
     }
-    .ruleHBContainer div:nth-child(2) ul li{
+    .ruleHBContainer div:nth-child(2)>ul>li{
         line-height: 18px;
     }
-    .ruleHBContainer div:nth-child(2) ul li:not(:last-child){
+    .ruleHBContainer div:nth-child(2)>ul>li:not(:last-child){
         margin-bottom: 15px;
     }
     .ruleHBContainer div:nth-child(2) ul li ul,
@@ -962,6 +968,9 @@ div .homeContainer nav div.active ol{
         margin: 10px 0 20px;
         color: var(--gs9);
         padding-left: 10px;
+    }
+    .ruleHBContainer div:nth-child(2) ul li ol li:not(:last-child){
+        margin-bottom: 5px;
     }
     /* rulesOfUseHB Fin */
     .wingHBContainer div:nth-child(2) h3,
@@ -1565,8 +1574,9 @@ div .homeContainer nav div.active ol{
         font-size: 16px;
     }
     .newsHBContainer article div h4 time{
+        background: url('../images/newdet_calendar.png') no-repeat left / 12px 11px;
+        filter: invert(42%) sepia(0%) saturate(644%) hue-rotate(144deg) brightness(91%) contrast(86%);
         color: var(--gs7);
-        background: url('../images/newdetD_calendar.png') no-repeat left / 12px 11px;
         padding: 2px 0 0 20px;
         margin-left: auto;
     }
@@ -2578,8 +2588,9 @@ div .homeContainer nav div.active ol{
         color: var(--gs9);
     }
     .newsHBContainer article div h4 time{
+        background: url('../images/newdet_calendar.png') no-repeat left / 12px 11px;
+        filter: invert(42%) sepia(0%) saturate(644%) hue-rotate(144deg) brightness(91%) contrast(86%);
         color: var(--gs7);
-        background: url('../images/newdetD_calendar.png') no-repeat left / 12px 11px;
         padding: 2px 0 0 20px;
         margin-left: auto;
     }
