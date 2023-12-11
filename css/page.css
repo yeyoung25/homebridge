@@ -1363,7 +1363,7 @@ div .homeContainer nav div.active ol{
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        padding-top: 4px;
+        padding: 4px 0 2px;
         font-size: 13px;
     }
     .indexContainer .contentBannerCB01>div:first-child ul li time{
