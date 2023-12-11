@@ -1,21 +1,18 @@
 $(document).ready(function(){
     customSlider(".speslider",'horizontal',false,500,0,false,true,5,1,214,45,null,'full',false,0);
+    customSlider(".banslider",'fade',true,1000,7000,true,true,1,1,0,0,null,'short',false,0);
+    headerAct1();
+    headerAct2();
+    menuButton();
+    gotop();
+    sumDetail();
+    mainHeader();
+    justCopy();
+    bxExt01();
+    bxExt02();
+    bxExt03();
+    mainFnb($("header #fnbPanel ul>li"));
 });
-
-$(window).load(function(){
-  customSlider(".banslider",'fade',true,1000,7000,true,true,1,1,0,0,null,'short',false,0);
-  headerAct1();
-  headerAct2();
-  menuButton();
-  gotop();
-  sumDetail();
-  mainHeader();
-  justCopy();
-  bxExt01();
-  bxExt02();
-  bxExt03();
-  mainFnb($("header #fnbPanel ul>li"));
-})
 
 $(window).resize(function(){
   headerAct1();
