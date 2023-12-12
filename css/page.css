@@ -189,7 +189,7 @@ div .homeContainer nav div.active ol{
         background: url('../images/maincon03_more.png') no-repeat right center / contain;
         padding-right: 10px;
         background-size: 4px 9px;
-        background-position: 40px 1px;
+        background-position: 40px 2.5px;
     }
     .indexContainer>.bx-wrapper div:nth-child(2)>.bx-pager::first-letter{
         font-size: 22px;
@@ -368,7 +368,7 @@ div .homeContainer nav div.active ol{
         color: var(--gs11);
         background-color: transparent;
         border: none;
-        line-height: 35px;
+        line-height: 37px;
         text-align: left;
         font-family: 'Open Sans';
         font-weight: 600;
