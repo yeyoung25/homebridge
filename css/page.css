@@ -488,6 +488,7 @@ div .homeContainer nav div.active ol{
         margin-left: auto;
         padding-left: 15px;
         color: var(--gs7);
+        font-family: 'Open Sans';
     }
     .newsHBContainer article div figure{
         display: inline-block;
@@ -1578,6 +1579,7 @@ div .homeContainer nav div.active ol{
         color: var(--gs7);
         padding: 2px 0 0 20px;
         margin-left: auto;
+        font-family: 'Open Sans';
     }
     .newsHBContainer article div figure{
         display: inline-block;
@@ -2592,6 +2594,7 @@ div .homeContainer nav div.active ol{
         color: var(--gs7);
         padding: 2px 0 0 20px;
         margin-left: auto;
+        font-family: 'Open Sans';
     }
     .newsHBContainer article div figure{
         padding: 30px 25px 100px;
