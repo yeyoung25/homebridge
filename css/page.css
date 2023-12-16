@@ -1,8 +1,29 @@
+[data-scroll="transform"]{
+    transition-duration: 1s;
+    transform: translateY(50px);
+    opacity: 0;
+}
+[data-scroll="transform"].active{
+    transform: translateY(0px);
+    opacity: 1;
+}
 div .guide{
     background: url('../images/hb_Header01.png') no-repeat center / cover;
 }
 div .HOSTEL{
     background: url('../images/hb_Header02.png') no-repeat center / cover;
+    position: relative;
+}
+div .HOSTEL::after{
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    background-color: var(--gs11);
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 div .theme{
     background: url('../images/hb_Header03.png') no-repeat center / cover;
@@ -335,12 +356,15 @@ div .homeContainer nav div.active ol{
     /* 상세페이지 시작 */
     div .homeContainer h2{
         display: flex;
+        position: relative;
         color: var(--gs1);
         justify-content: center;
         padding: 45px 0;
+        z-index: 1000;
     }
     div .homeContainer nav{
         display: flex;
+        position: relative;
         background-color: var(--gs1);
         width: 100%;
         padding-left: 3.571%;
@@ -348,6 +372,7 @@ div .homeContainer nav div.active ol{
         align-items: center;
         height: 40px;
         border: 1px solid var(--gs5);
+        z-index: 100;
     }
     div .homeContainer nav>a{
         background: url('../images/home_nav.png') no-repeat left / 15px 15px;
@@ -362,6 +387,7 @@ div .homeContainer nav div.active ol{
         height: 40px;
         border: 1px solid var(--gs5);
         box-sizing: border-box;
+        border-right: 0px;
     }
     div .homeContainer nav div input{
         width: 85%;
@@ -1038,6 +1064,8 @@ div .homeContainer nav div.active ol{
         width: 100%;
         display: flex;
         align-items: center;
+        padding-left: 20px;
+        box-sizing: border-box;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:not(:last-child),
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:not(:last-child){
@@ -1053,67 +1081,67 @@ div .homeContainer nav div.active ol{
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:first-child::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:first-child::before{
-        background: url('../images/buildingnumb_01.png') no-repeat center / contain;
+        background: url('../images/buildingnumb_01.png') no-repeat left / contain;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(2)::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(2)::before{
-        background: url('../images/buildingnumb_02.png') no-repeat center / contain;
+        background: url('../images/buildingnumb_02.png') no-repeat left / contain;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(3)::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(3)::before{
-        background: url('../images/buildingnumb_03.png') no-repeat center / contain;
+        background: url('../images/buildingnumb_03.png') no-repeat left / contain;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(4)::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(4)::before{
-        background: url('../images/buildingnumb_04.png') no-repeat center / contain;
+        background: url('../images/buildingnumb_04.png') no-repeat left / contain;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(5)::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(5)::before{
-        background: url('../images/buildingnumb_05.png') no-repeat center / contain;
+        background: url('../images/buildingnumb_05.png') no-repeat left / contain;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(6)::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(6)::before{
-        background: url('../images/buildingnumb_06.png') no-repeat center / contain;
+        background: url('../images/buildingnumb_06.png') no-repeat left / contain;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(7)::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(7)::before{
-        background: url('../images/buildingnumb_07.png') no-repeat center / contain;
+        background: url('../images/buildingnumb_07.png') no-repeat left / contain;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(8)::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(8)::before{
-        background: url('../images/buildingnumb_08.png') no-repeat center / contain;
+        background: url('../images/buildingnumb_08.png') no-repeat left / contain;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(9)::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(9)::before{
-        background: url('../images/buildingnumb_09.png') no-repeat center / contain;
+        background: url('../images/buildingnumb_09.png') no-repeat left / contain;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(10)::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(10)::before{
-        background: url('../images/buildingnumb_10.png') no-repeat center / contain;
+        background: url('../images/buildingnumb_10.png') no-repeat left / contain;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(11)::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(11)::before{
-        background: url('../images/buildingnumb_11.png') no-repeat center / contain;
+        background: url('../images/buildingnumb_11.png') no-repeat left / contain;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(12)::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(12)::before{
-        background: url('../images/buildingnumb_12.png') no-repeat center / contain;
+        background: url('../images/buildingnumb_12.png') no-repeat left / contain;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(13)::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(13)::before{
-        background: url('../images/buildingnumb_13.png') no-repeat center / contain;
+        background: url('../images/buildingnumb_13.png') no-repeat left / contain;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(14)::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(14)::before{
-        background: url('../images/buildingnumb_14.png') no-repeat center / contain;
+        background: url('../images/buildingnumb_14.png') no-repeat left / contain;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(15)::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(15)::before{
-        background: url('../images/buildingnumb_15.png') no-repeat center / contain;
+        background: url('../images/buildingnumb_15.png') no-repeat left / contain;
     }
     .wingHBContainer div:nth-child(2) ul li:nth-child(2) ol li:nth-of-type(16)::before,
     .mainHBContainer div:nth-child(2) ul li:last-child ol li:nth-of-type(16)::before{
-        background: url('../images/buildingnumb_16.png') no-repeat center / contain;
+        background: url('../images/buildingnumb_16.png') no-repeat left / contain;
     }
     .wingHBContainer div:nth-child(2) ul li:last-child{
         clear: both;
@@ -1436,12 +1464,15 @@ div .homeContainer nav div.active ol{
     /* 상세페이지 시작 */
     div .homeContainer h2{
         display: flex;
+        position: relative;
         color: var(--gs1);
         justify-content: center;
         padding: 55px 0;
+        z-index: 100;
     }
     div .homeContainer nav{
         display: flex;
+        position: relative;
         background-color: var(--gs1);
         width: 100%;
         padding-left: 3.125%;
@@ -1449,6 +1480,7 @@ div .homeContainer nav div.active ol{
         align-items: center;
         height: 40px;
         border: 1px solid var(--gs5);
+        z-index: 100;
     }
     div .homeContainer nav>a{
         display: block;
@@ -1463,8 +1495,11 @@ div .homeContainer nav div.active ol{
         height: 40px;
         border: 1px solid var(--gs5);
         box-sizing: border-box;
+        border-right: 0px;
     }
     div .homeContainer nav div input{
+        width: 100%;
+        text-align: left;
         color: var(--gs11);
         background-color: transparent;
         border: none;
@@ -2344,7 +2379,6 @@ div .homeContainer nav div.active ol{
     .indexContainer .contentBannerCB01>div:not(:last-child){
         width: 50%;
         padding: 75px 70px;
-        border-top: 1px solid var(--gs5);
         box-sizing: border-box;
     }
     .indexContainer .contentBannerCB01>div:not(:last-child) h2{
@@ -2436,18 +2470,22 @@ div .homeContainer nav div.active ol{
     /* 상세페이지 시작 */
     div .homeContainer h2{
         display: flex;
+        position: relative;
         color: var(--gs1);
         justify-content: center;
         padding: 145px 0;
+        z-index: 100;
     }
     div .homeContainer nav{
         display: flex;
+        position: relative;
         background-color: var(--gs1);
         width: 46.875%;
         min-width: 660px;
         padding-left: 13.281%;
         box-sizing: border-box;
         align-items: center;
+        z-index: 100;
     }
     div .homeContainer nav>a{
         background: url('../images/home_nav.png') no-repeat left / contain;
